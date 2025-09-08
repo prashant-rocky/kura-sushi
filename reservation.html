@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Kura sushi | Reservations</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/headerLogo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="reservation.html">
+                        <button class="myBtn  ms-3">Book table</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <section class="mainSlider text-white py-5" style="background-image: url(assets/images/aboutBanner.jpg);">
+        <div class="container d-flex text-center py-5 my-5">
+            <div class="contentBox d-block">
+
+                <h1>reservation</h1>
+                <h3 class="py-2">Reserve Your Table at Kura Sushi Dotonbori</h3>
+                <p>
+                  Enjoy a smooth and worry-free dining experience by reserving your table at the Kura Sushi <br>Global Flagship Store in Dotonbori.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="reservation" class="py-5" style="background: linear-gradient(135deg, #fff7f7 0%, #ffffff 100%);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color:#400606;">Reserve Your Table</h2>
+                <p class="text-muted lead">Book your spot at Kura Sushi Dotonbori and enjoy a seamless dining
+                    experience.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Booking Form -->
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 bg-white shadow rounded-4">
+                        <form id="reservationForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="your@email.com"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fw-bold">Phone</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+81-6-6786-8761"
+                                    required>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="date" class="form-label fw-bold">Date</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="time" class="form-label fw-bold">Time</label>
+                                    <input type="time" class="form-control" id="time" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="guests" class="form-label fw-bold">Guests</label>
+                                <input type="number" class="form-control" id="guests" placeholder="Number of Guests"
+                                    min="1" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg w-100 rounded-pill book-btn shadow-sm">Reserve
+                                Now</button>
+                        </form>
+
+                        <!-- Thank You Card -->
+                        <div id="thankYouCard" class="mt-4 p-4 bg-success text-white shadow rounded-4 text-center"
+                            style="display:none;">
+                            <h5 class="fw-bold">Thank You!</h5>
+                            <p>Your reservation has been received. We look forward to welcoming you at Kura Sushi
+                                Dotonbori.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="p-4 p-md-5 bg-white shadow rounded-4 h-100 d-flex flex-column justify-content-center">
+                        <h5 class="fw-bold mb-3" style="color:#400606;">Contact Us</h5>
+                        <p class="text-muted mb-2"><strong>Address:</strong> 1-4-22 Claude Bldg. 2F, Dotombori, Chuo,
+                            Osaka 542-0071, Osaka</p>
+                        <p class="text-muted mb-2"><strong>Phone:</strong> +81-6-6786-8761</p>
+                        <p class="text-muted mb-4"><strong>Email:</strong> prhq_kurasushi@kura-corpo.co.jp</p>
+                        <p class="text-muted">Prefer calling? Our team is ready to assist with your reservation.</p>
+                        <a href="tel:+81667868761" class="btn btn-outline-primary rounded-pill mt-3">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer text-white pt-5 border-top">
+        <div class="container">
+            <div class="row">
+                <!-- Logo + Description -->
+                <div class="col-md-3">
+                    <div class="footerLogo">
+                        <img src="assets/images/logo.png" alt="error">
+                        <p class="py-3">
+                            Kura Sushi Global Flagship Store in Dotonbori, Osaka, offers a unique dining experience with
+                            fresh, high-quality sushi served in a fun conveyor belt style.
+                        </p>
+                        <p><i class="fas fa-location-dot"></i>1-4-22 Claude Bldg. 2F, Dotombori, Chuo, Osaka 542-0071
+                            Osaka
+                        </p>
+                        <p><i class="fas fa-phone"></i>+81-6-6786-8761</p>
+                        <p><i class="fas fa-envelope"></i> Email: prhq_kurasushi@kura-corpo.co.jp</p>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-3 px-md-5">
+                    <h3 class="py-3">Useful Links</h3>
+                    <p><a href="index.html" class="text-decoration-none">Home</a></p>
+                    <p><a href="about.html" class="text-decoration-none">About</a></p>
+                    <p><a href="Blog.html" class="text-decoration-none">Blogs</a></p>
+                    <p><a href="menu.html" class="text-decoration-none">Menu</a></p>
+                    <p><a href="contact.html" class="text-decoration-none">Contact</a></p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/Kurasushi" target="_blank"
+                            class="text-white fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://x.com/mutenkurasushi" target="_blank" class="text-white fs-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Legal Information -->
+                <div class="col-md-3">
+                    <h3 class="py-3">Legal Information</h3>
+                    <p><a href="cookies.html" class="text-decoration-none">Cookies Policy</a></p>
+                    <p><a href="privacy.html" class="text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="disclaimer.html" class="text-decoration-none">Disclaimer</a></p>
+                    <p><a href="terms&condition.html" class="text-decoration-none">Terms & Conditions</a></p>
+                    <div class="text-start p-2">
+                        <a href="#" id="open_preferences_center" class="text-decoration-none">Update cookies
+                            preferences</a>
+                    </div>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-md-3">
+                    <h3 class="py-3">Opening Hours</h3>
+                    <p>Sunday: 10:20 AM – 12:00 AM</p>
+                    <p>Monday to Friday: 11:00 AM – 12:00 AM</p>
+                    <p>Saturday: 10:20 AM – 12:00 AM</p>
+
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="row w-100 text-center">
+                <div class="col-md-12">
+                    <div class="text-center py-3">
+                        <p class="mb-0">© 2025 Kura sushi. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"></script>
+    <!-- ✅ Bootstrap JS bundle (required for toggler & dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

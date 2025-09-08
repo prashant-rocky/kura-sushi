@@ -1,0 +1,372 @@
+.mainColor{
+    color: #400606;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+h1,
+h2 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 00;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Epunda Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+    background-color: transparent ;
+}
+.staticBg{
+    background-color: #400606;
+}
+.navbar.scrolled {
+    background-color: #400606 !important;
+    background: linear-gradient(to right, #400606, #670e0e );
+}
+.blogNav{
+    background-color: #400606 !important;
+}
+.sign{
+    font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.mainColor {
+    color: #400606;
+}
+.anotherColor{
+    color: #c07929;
+}
+.tabs {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+.myBtn {
+    background: #c07929;
+    background: linear-gradient(90deg, #c07929 0%, #e0b85c 50%, #c07929 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.btnHover {
+    border: 2px solid #c07929;
+    background-color: #c07929;
+    transition: all 0.3s ease-in-out;
+    background: none;
+}
+
+.btnHover:hover {
+    background-color: #400606 !important;
+    background: linear-gradient(to right, #400606, #670e0e );
+    border: 1px solid #400606;
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+.mainSlider {
+    padding-top: 200px;
+}
+footer{
+    background-color: #400606 !important;
+    background: linear-gradient(to right, #400606, #670e0e );
+}
+footer p {
+    color: white;
+}
+footer a {
+    color: white;
+}
+footer h3{
+    color: #c07929;
+}
+.footer .social-media i {
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.mainSlider {
+    position: relative;
+    padding-left: 100px;
+}
+
+.mainSlider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.mainSlider>.d-flex {
+    position: relative;
+    z-index: 2;
+}
+  #about {
+    background: linear-gradient(135deg, #fff7f7 0%, #ffffff 100%);
+  }
+
+  .image-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .scale-effect {
+    transition: transform 0.5s ease;
+  }
+  .scale-effect:hover {
+    transform: scale(1.05);
+  }
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+  }
+  /* menu */
+  #menu {
+    background: linear-gradient(135deg, #fff7f7 0%, #ffffff 100%);
+  }
+
+  #menu h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .menu-item img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+
+  .menu-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+  }
+
+  .menu-item .card-body h5 {
+    color: #400606;
+  }
+
+  .menu-item .card-body span {
+    font-size: 1.1rem;
+  }
+
+  .menu-item .card-body p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  /* reservation section */
+   #reservation h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .book-btn {
+    background-color: #400606;
+    border: 2px solid #400606;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .book-btn:hover {
+    background-color: #c07929;
+    border-color: #c07929;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  }
+
+  .form-control:focus {
+    border-color: #400606;
+    box-shadow: 0 0 0 0.2rem rgba(64,6,6,0.25);
+  }
+
+  #reservation .btn-outline-primary {
+    border-color: #400606;
+    color: #400606;
+    transition: all 0.3s ease;
+  }
+
+  #reservation .btn-outline-primary:hover {
+    background-color: #400606;
+    color: #fff;
+    border-color: #400606;
+  }
+
+  #thankYouCard {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+  /* chefs */
+   #chefs h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .chef-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .chef-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  }
+
+  .chef-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .chef-card:hover .chef-img {
+    transform: scale(1.1);
+  }
+
+  /* Overlay on hover */
+  .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(64,6,6,0.7);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chef-card:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay p {
+    color: #fff;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .chef-card .card-body h5 {
+    margin-top: 1rem;
+  }
+
+  .chef-card .card-body p {
+    font-size: 0.95rem;
+  }
+  /* blog */
+  #blog h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .blog-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 1rem;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  }
+
+  .blog-card img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transition: transform 0.5s ease;
+  }
+
+  .blog-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .blog-card .card-body h5 {
+    margin-bottom: 0.8rem;
+  }
+
+  .blog-card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .blog-card .btn-outline-primary {
+    border-color: #400606;
+    color: #400606;
+    transition: all 0.3s ease;
+  }
+
+  .blog-card .btn-outline-primary:hover {
+    background-color: #400606;
+    color: #fff;
+    border-color: #400606;
+  }
+  /* #contact detail */
+  #contact input,
+  #contact textarea {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px 15px;
+  }
+
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(192, 121, 41, 0.6);
+  }
+  /* single blog */
+   #blog-sushi-art h1, 
+  #blog-sushi-art h2, 
+  #blog-sushi-art h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #blog-sushi-art .accordion-button {
+    color: #400606;
+  }
+
+  #blog-sushi-art .btn {
+    transition: all 0.25s ease;
+  }
+
+  #blog-sushi-art .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  }
+
+  /* Responsive readability */
+  @media (max-width: 767px) {
+    #blog-sushi-art figure img { height: auto; }
+  }
