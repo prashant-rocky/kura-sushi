@@ -143,7 +143,6 @@ const menu4 = [
   }
 ];
 
-
 const menuBox1 = document.getElementById("menuBox1");
 if (menuBox1) {
     menu1.forEach(menu => {
